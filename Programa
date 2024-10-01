@@ -1,0 +1,18 @@
+void setup() {
+pinMode(8, OUTPUT);
+pinMode(A0, INPUT);
+Serial.begin(9600); 
+}
+
+void loop() {
+int  luz = analogRead(A0);
+if (luz < 60) {
+  digitalWrite(8, HIGH);
+} else {
+  digitalWrite(8, LOW);
+}
+
+Serial.println(analogRead(A0));
+delay(100);
+
+}
