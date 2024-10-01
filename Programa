@@ -1,3 +1,5 @@
+//Atribua o led á porta digital 8 e o fotorresistor à porta analógica A0 do Arduino
+
 void setup() {
 pinMode(8, OUTPUT);
 pinMode(A0, INPUT);
